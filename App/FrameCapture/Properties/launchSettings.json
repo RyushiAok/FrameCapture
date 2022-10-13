@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FrameCapture": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\tmp"
+    }
+  }
+}

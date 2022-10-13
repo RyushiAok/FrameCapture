@@ -1,0 +1,13 @@
+version: '3.9'
+services: 
+  app:
+   image: framecapture
+   stdin_open: true # https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose
+   tty: true # https://qiita.com/sekitaka_1214/items/2af73d5dc56c6af8a167
+   build:
+    context: .
+    dockerfile: Dockerfile
+   volumes: 
+    - type: bind
+      source: ./tmp
+      target: /app/tmp
